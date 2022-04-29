@@ -6,7 +6,7 @@ function pomotimer () {
   green='\e[32m'
   blue='\e[34m'
   nc='\e[0m'
-  printf "${cyan}Purple and ${green}green and ${blue}blue end${nc}\n"
+  printf "${cyan}Cyan and ${green}green and ${blue}blue end${nc}\n"
 
 }
 
