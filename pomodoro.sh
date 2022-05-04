@@ -14,7 +14,6 @@ function pomotimer () {
     echo "Options:"
     echo "-v      Version of this Pomodoro."
     echo "-w      Work timer you want."
-    echo "-b      Break time ajust."
     echo "-s      Short Break time ajust."
     echo "-l      Long Break time ajust."
     echo "-s      Sessions you want to study."
@@ -24,7 +23,9 @@ function pomotimer () {
 
   # Version Command
   if [[ "$1" == "-v" ]] || [[ "$1" == "--version" ]]; then
- 
+    echo -e "${cyan}This current version is:${clear}"
+    echo "Version: 1.0.0"
+    echo "For more content use helper"
     return 
   fi
 
@@ -39,11 +40,6 @@ function pomotimer () {
 
 
   # Long break command
-
-
-
-  # Another command
-
 
 
 }
