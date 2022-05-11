@@ -1,16 +1,19 @@
 #!/usr/bin/env bash
 
-function pomotimer () {
+function colors () {
   #adding colors
   cyan='\e[36m'
   green='\e[32m'
   blue='\e[34m'
   clear='\e[0m' 
+}
+
+function pomotimer () {
   printf "${green}Wellcome to Pomodoro Timer${clear}\n"
 
   # Help command 
   if [[ "$1" == "-h" ]] || [[ "$1" == "--help" ]]; then 
-    echo "Welcome to helper, see the options below!!"
+    echo -e "${blue}Welcome to helper, see the options below!!${clear}"
     echo "Options:"
     echo "-v      Version of this Pomodoro."
     echo "-w      Work timer you want."
@@ -29,18 +32,33 @@ function pomotimer () {
     return 
   fi
 
-  # Work command
-  if [[ "$1" == "-w" ]] || [[ "$1" == "--work" ]]; then
-    
-    return
-  fi
+# Standard Time
+#msg=""
+#beep_time="alarm 400 200"
+#timer=1500
 
-  # Short break command
+  while : 
+  do
+    case $1 in
+      -w | --work)
+        timer=$(($2*60))
+        ;;
+      -s | --short)
+        msg="Short Break is over bro!"
+        timer=$(($2*60))
+        ;;
+      -l | --long)
+        msg="Long Break it's over man!"
+        timer=$(($2*60))
+        ;;
+      -*)
+        echo "Error command unkdown: $1" 
+        return 1
+        ;;
+      *)
+        break
+        ;;
+    esac
+  done
 
-
-
-  # Long break command
-
-
-}
-
+  }
