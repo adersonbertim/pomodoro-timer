@@ -8,37 +8,4 @@ function colors () {
   clear='\e[0m'
 }
 
-function start () {
-
-}
-
-pause () {
-
-}
-
-sessions () {
-
-}
-
-timer (){
-  
-}
-
-long_break () {
-
-}
-
-short_break () {
-
-}
-
-menu_pomo (){
-  start
-  pause
-  sessions
-  timer
-  long_break
-  short_break
-}
-
 
