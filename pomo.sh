@@ -22,10 +22,10 @@ timer25 ()
 {
 while true
 do 
-  sleep 25m
-  echo -ne "$(ColorGreen)You worked so great, now is time to rest!"
-  sleep 5m
-  echo "$(ColorBlue)Time to work!"
+  sleep 5s
+  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
+  sleep 2s
+  echo -ne "${blue}Time to work!\n${clear}"
 done
 }
 
@@ -33,9 +33,9 @@ timer30 (){
 while true
 do 
   sleep 30m
-  echo -ne "$(ColorGreen)You worked so great, now is time to rest!"
+  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
   sleep 5m
-  echo "$(ColorBlue)Time to work!"
+  echo -ne "${blue}Time to work!\n${clear}"
 done
 }
 
@@ -43,9 +43,9 @@ timer45 (){
 while true
 do 
   sleep 45m
-  echo -ne "$(ColorGreen)You worked so great, now is time to rest!"
+  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
   sleep 10m
-  echo "$(ColorBlue)Time to work!"
+  echo -ne "${blue}Time to work!\n${clear}"
 done
 }
 
@@ -53,9 +53,9 @@ timer50 (){
 while true
 do 
   sleep 50m
-  echo -ne "$(ColorGreen)You worked so great, now is time to rest!"
+  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
   sleep 10m
-  echo "$(ColorBlue)Time to work!"
+  echo -ne "${blue}Time to work!\n${clear}"
 done
 }
 
@@ -63,9 +63,9 @@ timer60 () {
 while true
 do 
   sleep 60m
-  echo -ne "$(ColorGreen)You worked so great, now is time to rest!"
+  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
   sleep 10m
-  echo "$(ColorBlue)Time to work!"
+  echo -ne "${blue}Time to work!\n${clear}"
 done
 }
 
@@ -87,7 +87,7 @@ function menu () {
   $(ColorGreen '4)') 50 Minutes
   $(ColorGreen '5)') 60 Minutes
   $(ColorGreen '6)') Exit
-  $(ColorCyan 'Chose an Option:')"
+  $(ColorCyan 'Chose an Option: ')"
   read a 
   case $a in 
           1) timer25 ; menu ;;
@@ -96,8 +96,8 @@ function menu () {
           4) timer50 ; menu ;;
           5) timer60 ; menu ;;
           6) exit ; menu ;;
-          *) echo -e $red"ERROR"$clear;
-            WrongCommand ;;
+          *) echo -e "Error, wrong option!!";
+            ;;
         esac
   }
 menu
