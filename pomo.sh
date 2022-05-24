@@ -81,11 +81,11 @@ function menu () {
   echo -ne "
   Welcome to Pomodoro Session!
   Chose your option time:
-  $(ColorGreen '1)') 25 Minutes
-  $(ColorGreen '2)') 30 Minutes
-  $(ColorGreen '3)') 45 Minutes
-  $(ColorGreen '4)') 50 Minutes
-  $(ColorGreen '5)') 60 Minutes
+  $(ColorGreen '1)') 25 Minutes / 5 Minutes
+  $(ColorGreen '2)') 30 Minutes / 5 Minutes
+  $(ColorGreen '3)') 45 Minutes / 10 Minutes
+  $(ColorGreen '4)') 50 Minutes / 10 Minutes
+  $(ColorGreen '5)') 60 Minutes / 10 Minutes
   $(ColorGreen '6)') Exit
   $(ColorCyan 'Chose an Option: ')"
   read a 
