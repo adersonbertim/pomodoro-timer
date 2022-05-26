@@ -1,4 +1,17 @@
 #!/usr/bin/env bash
+#-------------------------------------------------------------
+# Description: Pomodoro timer with a simple script and menu
+# Version: 1.0
+# Author: Aderson Bertim
+# Script name: pomo.sh
+# OS : Arch Linux
+#-------------------------------------------------------------
+# Changelog Section
+# Realese 1.0.1
+# Correction at bug in 25min function and adding Description
+# and changelog
+#-------------------------------------------------------------
+
 #adding colors
 cyan='\e[36m'
 green='\e[32m'
@@ -14,7 +27,7 @@ ColorCyan () {
 }
 ColorBlue (){
   echo -ne $blue$1$clear
-}
+  }
 
 # Timers functions
 
@@ -22,9 +35,9 @@ timer25 ()
 {
 while true
 do 
-  sleep 5s
+  sleep 25m
   echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
-  sleep 2s
+  sleep 5m
   echo -ne "${blue}Time to work!\n${clear}"
 done
 }
