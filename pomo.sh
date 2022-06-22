@@ -35,50 +35,81 @@ timer25 ()
 {
 while true
 do 
-  sleep 25m
-  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
-  sleep 5m
-  echo -ne "${blue}Time to work!\n${clear}"
+  for i in {1..4}
+  do
+    sleep 25m
+    echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
+    sleep 5m
+    echo -ne "${blue}Time to work!\n${clear}"
+  done
+  echo -ne "${green}Timer for a long break!\n${clear}"
+  sleep 15m
+  echo -ne "${blue}Time back to work!\n${clear}"
 done
 }
 
 timer30 (){
 while true
 do 
-  sleep 30m
-  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
-  sleep 5m
-  echo -ne "${blue}Time to work!\n${clear}"
+  for i in {1..4}
+  do
+    sleep 30m
+    echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
+    sleep 5m
+    echo -ne "${blue}Time to work!\n${clear}"
+  done
+  echo -ne "${green}Timer for a long break!\n${clear}"
+  sleep 15m
+  echo -ne "${blue}Time back to work!\n${clear}"
 done
 }
 
 timer45 (){
 while true
 do 
-  sleep 45m
-  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
-  sleep 10m
-  echo -ne "${blue}Time to work!\n${clear}"
+  for i in {1..4}
+  do
+    sleep 45m
+    echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
+    sleep 10m
+    echo -ne "${blue}Time to work!\n${clear}"
+  done
+  echo -ne "${green}Timer for a long break!\n${clear}"
+  sleep 15m
+  echo -ne "${blue}Time back to work!\n${clear}"
 done
 }
 
 timer50 (){
 while true
 do 
-  sleep 50m
-  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
-  sleep 10m
-  echo -ne "${blue}Time to work!\n${clear}"
+  for i in {1..4}
+  do
+    sleep 50m
+    echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
+    sleep 10m
+    echo -ne "${blue}Time to work!\n${clear}"
+  done
+  echo -ne "${green}Timer for a long break!\n${clear}"
+  sleep 15m
+  echo -ne "${blue}Time back to work!\n${clear}"
 done
+
 }
 
 timer60 () {
 while true
 do 
-  sleep 60m
-  echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
-  sleep 10m
-  echo -ne "${blue}Time to work!\n${clear}"
+  for i in {1..4}
+  do
+    sleep 60m
+    echo -ne "${green}You worked so great, now is time to rest!\n${clear}"
+    sleep 10m
+    echo -ne "${blue}Time to work!\n${clear}"
+  done
+  echo -ne "${green}Timer for a long break!\n${clear}"
+  sleep 20m
+  echo -ne "${blue}Time back to work!\n${clear}"
 done
 }
 
